@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   ## the sub! line in the Rakefile
   s.name              = 'webfontloader'
   s.version           = '1.6.28'
-  s.date              = '2017-05-27'
+  s.date              = '2019-01-07'
 
   ## Make sure your summary is short. The description may be as long
   ## as you like.
@@ -156,6 +156,7 @@ DESC
     src/core/font.js
     src/core/fontmodule.js
     src/core/fontmoduleloader.js
+    src/core/fontmodulesloadcounter.js
     src/core/fontruler.js
     src/core/fontwatcher.js
     src/core/fontwatchrunner.js

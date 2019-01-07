@@ -32,7 +32,7 @@ goog.scope(function () {
    * @const
    * @type {boolean}
    */
-  DomHelper.CAN_WAIT_STYLESHEET = !!window['FontFace'];
+  DomHelper.CAN_WAIT_STYLESHEET = typeof window !== "undefined" ? !!window['FontFace'] : false;
 
   /**
    * Creates an element.

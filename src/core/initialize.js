@@ -44,9 +44,14 @@ var WEBFONT = 'WebFont';
 var WEBFONT_CONFIG = 'WebFontConfig';
 
 /**
+ * @type {Window|null}
+ */
+var browserWindow = typeof window !== 'undefined' ? window : null;
+
+/**
  * @type {webfont.WebFont}
  */
-var webFontLoader = new webfont.WebFont(window);
+var webFontLoader = new webfont.WebFont(browserWindow);
 
 if (INCLUDE_CUSTOM_MODULE) {
   webFontLoader.addModule(webfont.modules.Custom.NAME, function (configuration, domHelper) {
